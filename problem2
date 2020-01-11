@@ -1,0 +1,24 @@
+package euler;
+
+public class Problem2a {
+
+	public static void main(String[] args) {
+		int x = 1;
+		int y = 1;
+		int z;
+		int suma = 0;
+		do {
+			z = x + y;
+			System.out.println(z);
+			if (z % 2 == 0) {
+				suma = suma + z;
+			}
+			
+			y = x;
+			x = z;
+
+		} while (x + y < 4000000);
+System.out.println("Zbroj svih parnih brojeva Fibonaccievog niza do 4000000 iznosi: " + suma);
+	}
+
+}
